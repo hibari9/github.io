@@ -41,9 +41,9 @@
         <h3>启动快记牌APP</h3>
         <ul>
             <li>输入手机号获取验证码登录软件</li>
-            <li>点击<label style="color: #F4B55F">【主页】</label>按钮进入首页</li>
-            <li>选择扑克玩法，横屏游戏无需选择屏幕方向。然后点击右侧<label style="color: #F4B55F">【启动】</label>按钮</li>
-            <li>根据提示点击<label style="color: #F4B55F">【开始直播】</label></li>
+            <li>点击<label style="color: #00CD66">【主页】</label>按钮进入首页</li>
+            <li>选择扑克玩法，横屏游戏无需选择屏幕方向。然后点击右侧<label style="color: #00CD66">【启动】</label>按钮</li>
+            <li>根据提示点击<label style="color: #00CD66">【开始直播】</label></li>
             <li>快记牌APP启动成功后，在手机左上角将出现快记牌APP悬浮窗，请确保快记牌APP在牌局开始前启动快记牌APP，否则将出现不记牌或记牌出错的现象</li>
         </ul>
 
@@ -57,18 +57,18 @@
             <p>
                 郑重声明：本应用不是外挂软件，仅通过识别手机屏幕上的文字进行统计，是一款通用扑克文字识软件，在任何的形式和程度上，没有设计破译或修改游戏源代码、游戏客户端、游戏数据封包、游戏内存，和外挂软件在技术原理上有着本质区别，我们不会在游戏内进行自动点击操作游戏，也不会干扰游戏客户端和服务器的正常运作。用户使用纸和笔也可以实现快记牌APP的功能，记忆好的话完全不需要。本应用永不保证统计结果完全准确，如您需要准确的统计结果，请使用笔和纸进行统计，或使用游戏内置的记牌功能。<label style="color: red">本应用的统计结果仅供参考，请勿过分依赖本应用，由于参考统计结果或违反应用或游戏协议与相关规定对您造成的一切损失本应用概不负责。</label></p>
 
-            <li>如何禁用本快记牌APP？</li>
+            <li>如何禁用快记牌APP？</li>
             <p>
-                若您作为游戏方，不希望本快记牌APP能够识别贵方游戏扑克，可考虑采用一下方案：
+                若您作为游戏方，不希望快记牌APP能够识别贵方游戏扑克，可考虑采用一下方案：
             </p><ul>
                 <li>
                     禁用录屏功能
                     <ol>
-                        <li>通过<label style="color: #71e1ff">capturedDidChangeNotification</label>监听系统录屏功能是否开启，提示用户关闭录屏后才允许进入游戏；
+                        <li>通过<label style="color: #00CD66">capturedDidChangeNotification</label>监听系统录屏功能是否开启，提示用户关闭录屏后才允许进入游戏；
                         </li>
-                        <li>通过Bundle ID检查是否安装快记牌APP软件，提示用户卸载后才允许进入游戏。供需检测1个Bundle ID : <label style="color: #71e1ff">com.hsy.jipaiqi</label>；
+                        <li>通过Bundle ID检查是否安装快记牌APP软件，提示用户卸载后才允许进入游戏。供需检测1个Bundle ID : <label style="color: #00CD66">fan.z6.counter</label>；
                         </li>
-                        <li>通过Scheme检查是否能启动快记牌APP软件，提示用户卸载后才允许进入游戏。可启动快记牌APP软件的Scheme为 : <label style="color: #71e1ff">jpds://</label>
+                        <li>通过Scheme检查是否能启动快记牌APP软件，提示用户卸载后才允许进入游戏。可启动快记牌APP软件的Scheme为 : <label style="color: #00CD66">QuickCounter://</label>
                         </li>
                     </ol>
                 </li>

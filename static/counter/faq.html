@@ -58,18 +58,18 @@
             快记牌APP不是外挂，不会干扰游戏客户端和游戏服务器的正常运作。若游戏完全禁止用户使用快记牌APP这类第三方辅助工具，使用快记牌APP有可能会被游戏封号，<label style="color: red">用户因违反游戏协议与相关规定而造成的损失需由用户自己承担</label>。
         </p>
 
-        <h3>作为游戏方，如何禁用本快记牌APP</h3>
+        <h3>作为游戏方，如何禁用快记牌APP</h3>
         <p>
-            若您作为游戏方，不希望本快记牌APP能够识别贵方游戏扑克，可考虑采用一下方案：
+            若您作为游戏方，不希望快记牌APP能够识别贵方游戏扑克，可考虑采用一下方案：
         </p><ul>
             <li>
                 禁用录屏功能
                 <ol>
-                    <li>通过<label style="color: #71e1ff">capturedDidChangeNotification</label>监听系统录屏功能是否开启，提示用户关闭录屏后才允许进入游戏；
+                    <li>通过<label style="color: #00CD66">capturedDidChangeNotification</label>监听系统录屏功能是否开启，提示用户关闭录屏后才允许进入游戏；
                     </li>
-                    <li>通过Bundle ID检查是否安装快记牌APP软件，提示用户卸载后再允许进入游戏。供需检测1个Bundle ID : <label style="color: #71e1ff">com.hsy.jipaiqi</label>；
+                    <li>通过Bundle ID检查是否安装快记牌APP软件，提示用户卸载后再允许进入游戏。供需检测1个Bundle ID : <label style="color: #00CD66">fan.z6.counter</label>；
                     </li>
-                    <li>通过Scheme检查是否能启动快记牌APP软件，提示用户卸载后才允许进入游戏。可启动快记牌APP软件的Scheme为 : <label style="color: #71e1ff">jpds://</label>
+                    <li>通过Scheme检查是否能启动快记牌APP软件，提示用户卸载后才允许进入游戏。可启动快记牌APP软件的Scheme为 : <label style="color: #00CD66">QuickCounter://</label>
                     </li>
                 </ol>
             </li>
